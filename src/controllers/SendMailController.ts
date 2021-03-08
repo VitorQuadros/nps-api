@@ -45,6 +45,7 @@ class SendMailController {
         user_id: user.id,
         value: null,
       }],
+      relations: ['user', 'survey'],
     });
 
     if (surveyUserAlreadyExists) {
